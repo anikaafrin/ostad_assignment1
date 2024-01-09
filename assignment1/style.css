@@ -1,0 +1,143 @@
+body{
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+header{
+    border-bottom: 1px solid #eee2; 
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+    z-index: 100;
+}
+.card {
+    margin-top:8%;
+    float:left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding-left: 15px;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+.banner{
+    background-image: url(images/smile.jpg);
+    width: 100%;
+    height: 100vh;
+    margin-top: -70px;
+    margin-bottom: -70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.banner::after{
+    content:'';
+    position: absolute;
+    inset: 0 0 0 0; 
+}
+.banner .content{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Lemon', serif;
+}
+.banner .content div:nth-child(1){
+    font-size: 3em;
+    /* 3em=12px */
+
+
+}
+.banner .content div:nth-child(2){
+    font-size: 20em;
+    font-weight:bold;
+    color: #dae2db;
+}
+.banner .content div:nth-child(3){
+    text-align: center;
+}
+.banner .content div button{
+    border: 1px solid #eee7;
+    background-color: transparent;
+    color: #eee;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+.agebutton{
+    align-items: center;
+}
+@media screen and (max-width: 1200px){
+    .banner .content{
+        font-size: 9px; 
+    }
+}
+@media screen and (max-width: 992px){
+    .banner .content{
+        font-size: 7px; 
+    }
+}
+@media screen and (max-width: 678px){
+    .banner .content{
+        font-size: 4px; 
+    }
+}
+@media screen and (max-width: 1200px){
+    .card{
+        font-size: 9px; 
+    }
+}
+@media screen and (max-width: 992px){
+    .card{
+        font-size: 7px; 
+    }
+}
+@media screen and (max-width: 678px){
+    .card{
+        font-size: 4px; 
+    }
+}
+@media screen and (max-width: 1200px){
+    .agebutton{
+        font-size: 20px; 
+    }
+}
+@media screen and (max-width: 992px){
+    .agebutton{
+        font-size: 15px; 
+    }
+}
+@media screen and (max-width: 678px){
+    .agebutton{
+        font-size: 10px; 
+    }
+}
+footer{
+    border-bottom: 1px solid #eee2; 
+    text-align: center;
+    background-color: #000;
+    height: 70px;
+    padding:  30px 10px;
+    position: relative;
+
+
+}
+.button1{
+    height:auto;
+    width:fit-content;
+}
